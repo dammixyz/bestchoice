@@ -189,6 +189,8 @@
 <script src="{{asset('js2/vendor/all.js')}}"></script>
 <script src="{{asset('js2/app/app.js')}}"></script>
 {{--<script src="{{asset('js/rating.js')}}"></script>--}}
+
+{{--This contains the JavaScript for rating--}}
 @include('../rating')
 
 </body>
