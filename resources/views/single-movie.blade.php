@@ -177,7 +177,7 @@
                                             <div class="col-md-4 col-xs-12 col-sm-12">
                                                 <div class="sb-it">
                                                     <h6>Category: </h6>
-                                                    <p><a href="#">{{$movie->category->name}}</a></p>
+                                                    <p><a href="{{route('categories.show', $movie->category->id)}}">{{$movie->category->name}}</a></p>
                                                 </div>
                                                 <div class="sb-it">
                                                     <h6>Genre:</h6>

@@ -78,7 +78,7 @@
                         </a>
                         <ul class="dropdown-menu level1">
                             @foreach($categories as $category)
-                                <li><a href="#">Nollywood ({{$category->name}})</a></li>
+                                <li><a href="{{route('categories.show', $category->id)}}">{{$category->name}}</a></li>
                             @endforeach
                         </ul>
                     </li>
@@ -188,7 +188,8 @@
 <script src="{{asset('jquery-selectric/jquery-selectric.js')}}"></script>
 <script src="{{asset('js2/vendor/all.js')}}"></script>
 <script src="{{asset('js2/app/app.js')}}"></script>
-<script src="{{asset('js/rating.js')}}"></script>
+{{--<script src="{{asset('js/rating.js')}}"></script>--}}
+@include('../rating')
 
 </body>
 
